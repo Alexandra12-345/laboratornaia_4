@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Лабораторная работа 4</title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        var yourText = prompt("Your text: (in English)");
+        var word = [];
+        var arr=yourText.split(/\.|!|\?| |,/);
+        for( var i = 0; i<arr.length; i++){
+            if(arr[i][0]=='E'||arr[i][0]=='e'||
+               arr[i][0]=='Y'||arr[i][0]=='y'||
+               arr[i][0]=='U'||arr[i][0]=='u'||
+               arr[i][0]=='I'||arr[i][0]=='i'||
+               arr[i][0]=='O'||arr[i][0]=='o'||
+               arr[i][0]=='A'||arr[i][0]=='a'
+               &&
+               arr[i][-1]=='E'||arr[i][-1]=='e'||
+               arr[i][-1]=='Y'||arr[i][-1]=='y'||
+               arr[i][-1]=='U'||arr[i][-1]=='u'||
+               arr[i][-1]=='I'||arr[i][-1]=='i'||
+               arr[i][-1]=='O'||arr[i][-1]=='o'||
+               arr[i][-1]=='A'||arr[i][-1]=='a'){
+                        word.push(arr[i]);        
+            }
+        }
+        alert(word);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
